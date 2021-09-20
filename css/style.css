@@ -477,7 +477,8 @@ body{
 }
 
 .second-question__background-button, 
-.register__column__item__bg-button {
+.register__column__item__bg-button,
+.register-form__bg-button {
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center;
@@ -487,7 +488,8 @@ body{
 }
 
 .second-question__button, 
-.register__column__item__button {
+.register__column__item__button,
+.register-form__button {
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -650,12 +652,10 @@ body{
 
 /*ecosystem styles start */
 
-.ecosystem{
-
-}
-
 .ecosystem__title {
-
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
 }
 
 .ecosystem__column {
@@ -709,3 +709,93 @@ body{
 }
 
 /*ecosystem styles end */
+
+.bg {
+    background: url(../img/register-form-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*register form styles start */
+
+.register-form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Muller;
+    font-weight: 500;
+    line-height: 140%;
+    color: #D6D6D6;
+}
+
+.register-form__first-name,
+.register-form__last-name,
+.register-form__email,
+.register-form__artist,
+.register-form__country {
+    width: 282px;
+    height: 66px;
+
+    padding-top: 21px;
+    padding-left: 40px;
+    margin-bottom: 16px;
+
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(231, 231, 231, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+}
+
+.register-form__email,
+.register-form__artist,
+.register-form__country {
+    width: 580px;
+    height: 66px;
+}
+
+.register-form__last-name {
+    margin-left: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.register-form__bg-button {
+    margin: 32px auto 0 auto;
+}
+
+/*register form styles end */
+
+
+/*footer styles start */
+
+/*.footer {
+    background: rgba(19, 20, 21, 0.7);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer__logo {
+    margin-top: 33px;
+}
+
+.footer__title, .footer__text {
+    line-height: 21px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.footer__text {
+    font-weight: 500;
+}*/
+
+/*footer styles end */
