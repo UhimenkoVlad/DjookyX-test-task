@@ -277,6 +277,116 @@ body{
     height: inherit;
 }
 
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*common styles start*/
+
+.first-question,
+.second-question,
+.security,
+.register,
+.ecosystem {
+    padding-top: 86px;
+    padding-bottom: 90px;
+}
+
+.second-question, .register {
+    padding-bottom: 100px;
+}
+
+.first-question__title,
+.second-question__title,
+.security__title,
+.register__title,
+.ecosystem__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 11px;
+}
+
+.first-question__title::before,
+.second-question__title::before,
+.security__title::before,
+.register__title::before,
+.ecosystem__title::before {
+    content: '';
+    position: absolute;
+    margin-top: 50px;
+    height: 7px;
+    width: 57px;
+    background: #FB3099;
+}
+
+.first-question__column, 
+.second-question__column {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.first-question__column__item, 
+.second-question__column__item {
+    margin-right: 100px;
+    width: 532px;
+}
+
+.first-question__column__item:last-child, 
+.second-question__column__item:last-child {
+    margin-right: 0px;
+}
+
+.first-question__column__item h3, 
+.second-question__column__item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 5.4px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+}
+
+.first-question__column__item h3::before, 
+.second-question__column__item::before, 
+.second-question__column__item h3::before{
+    margin-top: 42px;
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 532px;
+    background: #eaeaea;
+}
+
+.header__button,
+.second-question__button, 
+.register__column__item__button,
+.register-form__button {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 262px;
+    border-radius: 10px;
+    background: #FF0090;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/*common styles end*/
 
 /* Header styles start */
 
@@ -300,22 +410,14 @@ body{
     height: inherit;
 }
 
-.header__register {
-    padding: 10px 41px 12px 41px;
+.header__button {
+    padding: 10px 41px 12px;
     width: 150px;
     height: 45px;
     right: 138px;
     top: calc(50% - 45px/2 - 2086.5px);
     background: #FF0090;
     border-radius: 10px;
-}
-
-.header__register button {
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    background: inherit;
-    color: white;
 }
 
 .header__register:hover, .header__register:focus, .header__register:active{
@@ -398,106 +500,6 @@ body{
 
 /* intro styles end */
 
-/*common styles start*/
-
-.first-question,
-.second-question,
-.security,
-.register,
-.ecosystem {
-    padding-top: 86px;
-    padding-bottom: 90px;
-}
-
-.second-question, .register {
-    padding-bottom: 100px;
-}
-
-.first-question__title,
-.second-question__title,
-.security__title,
-.register__title,
-.ecosystem__title {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-    margin-bottom: 11px;
-}
-
-.first-question__title::before,
-.second-question__title::before,
-.security__title::before,
-.register__title::before,
-.ecosystem__title::before {
-    content: '';
-    position: absolute;
-    margin-top: 50px;
-    height: 7px;
-    width: 57px;
-    background: #FB3099;
-}
-
-.first-question__column, 
-.second-question__column {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-}
-
-.first-question__column__item, 
-.second-question__column__item {
-    margin-right: 100px;
-    width: 532px;
-}
-
-.first-question__column__item:last-child, 
-.second-question__column__item:last-child {
-    margin-right: 0px;
-}
-
-.first-question__column__item h3, 
-.second-question__column__item h3 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 21px;
-    letter-spacing: 5.4px;
-    text-transform: uppercase;
-    margin-bottom: 21px;
-}
-
-.first-question__column__item h3::before, 
-.second-question__column__item::before, 
-.second-question__column__item h3::before{
-    margin-top: 42px;
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 532px;
-    background: #eaeaea;
-}
-
-.second-question__background-button, 
-.register__column__item__bg-button,
-.register-form__bg-button {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-align: center;
-    width: 262px;
-    border-radius: 10px;
-    background: #FF0090;
-}
-
-.second-question__button, 
-.register__column__item__button,
-.register-form__button {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21px;
-    color: #FFFFFF;
-    background: inherit;
-}
-
-/*common styles end*/
 
 /* first-question styles start */
 
@@ -566,11 +568,8 @@ body{
     width: 445px;
 }
 
-.second-question__background-button {
-    margin: 90px auto 0px;
-}
-
 .second-question__button {
+    margin: 90px auto 0px auto;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -643,7 +642,7 @@ body{
     text-align: center;
 }
 
-.register__column__item__bg-button {
+.register__column__item__button {
     margin: 50px auto 0 auto;
 }
 
@@ -710,23 +709,13 @@ body{
 
 /*ecosystem styles end */
 
-.bg {
+
+/*register form styles start */
+
+.bg-register-footer {
     background: url(../img/register-form-bg.jpg) no-repeat center;
     background-size: cover;
 }
-
-.box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 580px;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*register form styles start */
 
 .register-form {
     padding-top: 100px;
@@ -734,7 +723,6 @@ body{
     font-family: Muller;
     font-weight: 500;
     line-height: 140%;
-    color: #D6D6D6;
 }
 
 .register-form__first-name,
@@ -745,10 +733,15 @@ body{
     width: 282px;
     height: 66px;
 
-    padding-top: 21px;
+    padding-top: 1px;
     padding-left: 40px;
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
+    cursor: pointer;
+    transition: background .2s ease-out;
+
+    color: #D6D6D6;
     background: rgba(255, 255, 255, 0.18);
     border: 1px solid rgba(231, 231, 231, 0.3);
     box-sizing: border-box;
@@ -763,14 +756,104 @@ body{
     height: 66px;
 }
 
+.register-form__artist,
+.register-form__country {
+    position: relative;
+    display:inline-block;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .register-form__last-name {
     margin-left: 16px;
     font-weight: bold;
+}
+
+.register-form__first-name::placeholder,
+.register-form__email::placeholder {
+    color: #D6D6D6;
+}
+
+.register-form__last-name::placeholder {
     color: #FFFFFF;
 }
 
-.register-form__bg-button {
-    margin: 32px auto 0 auto;
+.register-form__first-name:hover,
+.register-form__first-name:focus,
+.register-form__first-name:active,
+.register-form__last-name:hover,
+.register-form__last-name:focus,
+.register-form__last-name:active,
+.register-form__email:hover,
+.register-form__email:focus,
+.register-form__email:active,
+.register-form__artist:hover,
+.register-form__artist:focus,
+.register-form__artist:active,
+.register-form__country:hover,
+.register-form__country:focus,
+.register-form__country:active {
+    background: #fff;
+    color: rgba(19, 20, 21, 0.8);
+}
+
+.register-form__first-name:hover::placeholder,
+.register-form__first-name:focus::placeholder,
+.register-form__first-name:active::placeholder,
+.register-form__last-name:hover::placeholder,
+.register-form__last-name:focus::placeholder,
+.register-form__last-name:active::placeholder,
+.register-form__email:hover::placeholder,
+.register-form__email:focus::placeholder,
+.register-form__email:active::placeholder {
+    color: rgba(19, 20, 21, 0.8);
+}
+
+.register-form__accordion-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.register-form__accordion-content {
+    display: none;
+}
+
+.register-form__accordion-input:checked ~ 
+.register-form__accordion-content {
+    display: block;
+}
+
+.register-form__artist:after,
+.register-form__country:after {
+    content: url(../img/svg/triangl.svg);
+    display: block;
+
+    position: absolute;
+    right: 30px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.register-form__accordion-input:checked ~ 
+.register-form__artist:after,
+.register-form__accordion-input:checked ~ 
+.register-form__country:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.register-form__accordion-content p {
+    color: white;
+}
+
+.register-form__button {
+    margin: 24px auto 0 auto;
 }
 
 /*register form styles end */

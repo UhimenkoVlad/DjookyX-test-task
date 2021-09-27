@@ -16,9 +16,7 @@
 							<img src="./img/svg/Group 1578.svg" alt="DjookyX" class="header__logo-pic">
 						</a>
 					</div>
-					<div class="header__register">
-						<button>Register</button>
-					</div>
+					<button class="header__button">Register</button>
 				</div>
 			</div>
 		</header>
@@ -149,9 +147,7 @@
 						</ul>
 						</div>
 					</div>
-					<div class="second-question__background-button">
-						<button class="second-question__button">Register</button>
-					</div>
+					<button class="second-question__button">Register</button>
 				</div>
 			</section>
 
@@ -180,11 +176,9 @@
 								and I want to initiate sale of IP rights in my<br>
 								song(s)
 							</p>
-							<div class="register__column__item__bg-button">
-								<button class="register__column__item__button">
-									Register as Artist
-								</button>
-							</div>
+							<button class="register__column__item__button">
+								Register as Artist
+							</button>
 						</div>
 						<div class="register__column__item">
 							<h3 class="register__column__item__title">
@@ -194,11 +188,9 @@
 								and I want to be among the first in the world to buy IP<br>
 								rights in my favourite songs 
 							</p>
-							<div class="register__column__item__bg-button">
-								<button class="register__column__item__button">
-									Register as Investor
-								</button>
-							</div>
+							<button class="register__column__item__button">
+								Register as Investor
+							</button>
 						</div>
 					</div>
 				</div>
@@ -209,6 +201,7 @@
 					<h2 class="ecosystem__title">
 						Djooky Ecosystem
 					</h2>
+
 					<div class="ecosystem__column">
 						<div class="ecosystem__column__item">
 							<img src="./img/svg/Cup.svg" alt="Cup image" class="ecosystem__column__item__image">
@@ -219,6 +212,7 @@
 								The first global online song contest
 							</p>
 						</div>
+
 						<div class="ecosystem__column__item">
 							<img src="./img/svg/micro.svg" alt="Microfone image" class="ecosystem__column__item__image">
 							<h3>
@@ -232,29 +226,46 @@
 				</div>
 			</section>
 
-			<div class="bg">
+			<div class="bg-register-footer">
 				<section class="register-form">
 					<div class="box">
-						<div class="flex">
-							<div class="register-form__first-name">
-								<label for="first-name">First name</label>
+						<form action="form-complete.html">
+							<div class="flex">
+								<input type="text" class="register-form__first-name" placeholder="First name" required name="last-name">
+
+								<input type="text" class="register-form__last-name" placeholder="Last name" required name="last-name">
 							</div>
-							<div class="register-form__last-name">
-								<label for="last-name">Last name</label>
+
+							<input type="email" class="register-form__email" placeholder="Email" required name="email">
+
+							<div class="accordion">
+								<input type="checkbox" class="register-form__accordion-input" placeholder="Artist" id="artist">
+
+								<label class="register-form__artist" for="artist">Artist</label>
+
+								<div class="register-form__accordion-content">
+									<p class="text1">полюшко для Artist 1</p>
+									<p class="text2">полюшко для Artist 2</p>
+									<p class="text3">полюшко для Artist 3</p>
+								</div>
 							</div>
-						</div>
-						<div class="register-form__email">
-							<label for="email">Email</label>
-						</div>
-						<div class="register-form__artist">
-							<label for="artist">Artist</label>
-						</div>
-						<div class="register-form__country">
-							<label for="country">Country</label>
-						</div>
-						<div class="register-form__bg-button">
-							<button class="register-form__button">Register</button>
-						</div>
+
+							<div class="accordion">
+								<input type="checkbox" class="register-form__accordion-input" placeholder="Country" id="country">
+
+								<label class="register-form__country" for="country">Country</label>
+								
+								<div class="register-form__accordion-content">
+									<p class="text1">полюшко для Country 1</p>
+									<p class="text2">полюшко для Country 2</p>
+									<p class="text3">полюшко для Country 3</p>
+								</div>
+							</div>
+
+							<div class="register-form__bg-button">
+								<input type="submit" class="register-form__button" value="Register">
+							</div>
+						</form>
 					</div>
 				</section>
 
