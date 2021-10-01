@@ -377,8 +377,10 @@ body{
     width: 262px;
     border-radius: 10px;
     background: #FF0090;
+    box-shadow: 0 6px 24px rgb(255 0 144 / 29%);
 
     cursor: pointer;
+    transition: background .2s ease-out;
 
     font-size: 18px;
     font-weight: 500;
@@ -386,7 +388,16 @@ body{
     color: #FFFFFF;
 }
 
+.header__button:hover,
+.second-question__button:hover, 
+.register__column__item__button:hover,
+.register-form__button:hover {
+    background: #fff;
+    color: #ff0090;
+}
+
 /*common styles end*/
+
 
 /* Header styles start */
 
