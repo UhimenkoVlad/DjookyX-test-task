@@ -872,24 +872,54 @@ body{
 
 /*footer styles start */
 
-/*.footer {
+.footer {
+    padding-bottom: 22px;
     background: rgba(19, 20, 21, 0.7);
     mix-blend-mode: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer__logo {
-    margin-top: 33px;
+    margin-top: 29px;
 }
 
-.footer__title, .footer__text {
-    line-height: 21px;
+.footer__support-mail{
+    margin-top: 22px;
     text-align: right;
-    font-weight: 400;
+    line-height: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
-.footer__text {
-    font-weight: 500;
-}*/
+.footer__support-mail::first-line {
+    color: #919394;
+}
+
+.footer__flex::after {
+    content: '';
+    margin-top: 23px;
+    width: 577px;
+    height: 0.44px;
+    background: rgba(118, 118, 118, 0.3);
+}
+
+.footer__copyright{
+    margin-top: 19px;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
 
 /*footer styles end */
