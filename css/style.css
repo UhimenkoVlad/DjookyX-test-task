@@ -407,29 +407,41 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
 
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 
     background: rgba(19, 20, 21, 0.7);
     mix-blend-mode: normal;
 }
 
+.register__column::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    height: 209px;
+    width: 0px;
+    border-radius: 0px;
+    border: 1px solid #464343;
+}
+
 .register__column__item {
-    padding-top: 44px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 57px;
+    padding: 44px 50px;
+    margin: auto;
     width: 580px;
 }
 
-.register__column__item:last-child::before {
+/*.register__column__item:last-child::before {
     content: '';
     position: absolute;
+    display: block;
+    margin: auto;
     height: 209px;
     width: 0px;
     border-radius: 0px;
     border: 1px solid #464343;;
-}
+}*/
 
 .register__column__item__title {
     font-size: 27px;
@@ -737,7 +749,8 @@ body{
     }
 
     .first-question__column, 
-    .second-question__column {
+    .second-question__column,
+    .register__column {
         display: block;
     }
 
@@ -754,6 +767,38 @@ body{
     .second-question__column__item::before {
         bottom: -3%;
     }
+
+    .register__column {
+        width: 80vw;
+        margin: 60px auto 0;
+    }
+
+    .register__column__item {
+        width: inherit;
+    }
+
+    /* для отцентрирования гор. полосы
+    переносим падинг в низ этой же гор. полоски */
+    .register__column__item:last-child {
+        padding-top: 0;
+    }
+
+    /* убираем вертикальную полосу */
+    .register__column::before {
+        position: static;
+    }
+
+    /* добавляем горизонтальную */
+    .register__column__item:last-child:before {
+        content: '';
+        display: block;
+        margin: 0 auto 44px;
+        height: 0px;
+        width: 55vw;
+        border-radius: 0px;
+        border: 1px solid #464343;
+    }
+
 }
 
 @media (max-width: 480px) {
