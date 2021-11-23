@@ -99,14 +99,14 @@ body{
     margin-bottom: 11px;
 }
 
-.first-question__title::before,
-.second-question__title::before,
-.security__title::before,
-.register__title::before,
-.ecosystem__title::before {
+.first-question__title::after,
+.second-question__title::after,
+.security__title::after,
+.register__title::after,
+.ecosystem__title::after {
     content: '';
-    position: absolute;
-    margin-top: 50px;
+    display: block;
+    margin-top: 9px;
     height: 7px;
     width: 57px;
     background: #FB3099;
@@ -804,5 +804,10 @@ body{
 @media (max-width: 480px) {
     .wrapper {
         max-width: none
+    }
+
+    .register__column__item__button {
+        padding: 16px 21px;
+        width: auto;
     }
 }
