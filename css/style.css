@@ -247,12 +247,12 @@ body{
     margin-bottom: 29px;
 }
 
-.intro__title::before{
+.intro__title::after {
     content: '';
-    position: absolute;
+    display: block;
     height: 7px;
     width: 87px;
-    top: 338px;
+    margin-top: 29px;
     background: #FFFFFF;
 }
 
