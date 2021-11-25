@@ -70,7 +70,6 @@ body{
 
 .flex {
     display: flex;
-    flex-wrap: wrap;
 }
 
 /*common styles start*/
@@ -553,6 +552,7 @@ body{
 .register-form__select-country {
     width: 282px;
     height: 66px;
+    min-width: 170px;
 
     padding-top: 1px;
     padding-left: 40px;
@@ -805,6 +805,22 @@ body{
     .ecosystem__column__item:first-child {
         margin-bottom: 20px;
     }
+
+    .box {
+        width: 75.5vw;
+    }
+
+    .register-form__email, 
+    .register-form__select-artist, 
+    .register-form__select-country {
+        width: 75.5vw;
+    }
+
+    
+    .second-question__button,
+    .register-form__button {
+        width: 34vw;
+    }
 }
 
 @media (max-width: 480px) {
@@ -819,5 +835,23 @@ body{
 
     .ecosystem__column__item {
         padding: 0 45px 30px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .register-form__first-name,
+    .register-form__last-name {
+        margin-left: 0px;
+        width: 75.5vw;
+    }
+    
+    .header__button, 
+    .second-question__button,
+    .register-form__button {
+        padding: 10px 41px 12px;
+        width: auto;
+        height: 45px;
     }
 }
