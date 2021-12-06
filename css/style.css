@@ -667,14 +667,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .footer__logo {
-    margin-top: 29px;
+    display: block;
 }
 
 .footer__support-mail{
-    margin-top: 22px;
     text-align: right;
     line-height: 21px;
     font-weight: 500;
@@ -853,5 +853,24 @@ body{
         padding: 10px 41px 12px;
         width: auto;
         height: 45px;
+    }
+
+    .footer__flex {
+        display: block;
+    }
+
+    .footer__flex:after {
+        display: block;
+        width: inherit;
+    }
+
+    .footer__logo {
+        margin: 0 auto;
+    }
+
+    .footer__support-mail {
+        text-align: center;
+        display: block;
+        margin: 10px auto 0;
     }
 }
