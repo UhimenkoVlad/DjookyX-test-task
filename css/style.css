@@ -229,13 +229,20 @@ body{
 
 .main{
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .intro{
     min-height: inherit;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
-    padding-top: 260px;
+    padding-top: 25vh;
+}
+
+.intro-flex {
+    display: flex;
+    flex-direction: column;
+    height: 72vh;
 }
 
 .intro__title {
@@ -257,13 +264,13 @@ body{
 
 .intro__text{
     margin-top: 58px;
+    flex-grow: 3;
     font-size: 18px;
     width: 39%;
     color: white;
 }
 
 .intro__slider{
-    margin-top: 339px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
