@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ToDoList</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/toDoList-style.css">
+		<script src="toDoList.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+	
+				<h1>TodoList</h1>
+
+				<div class="frame">
+					<div class="inputWrapper">
+						<input type="text" class="input">
+					</div>
+
+					<div class="buttons">
+						<input type="image" class="addButton" src="img/ok96.png" alt="Кнопка 'Ок'" onclick=addToDoList()>
+
+						<input type="image" class="editButton" src="img/edit480.png" alt="Кнопка 'edit'" onclick=editItemToDoList()>
+
+						<input type="image" class="deleteButton" src="img/delete-100.png" alt="Кнопка 'delete'" onclick=delItemToDoList()>
+					</div>
+				</div>
+
+			<ol class="list"></ol>
+		</div>
+	</body>
+</html>
